@@ -1,0 +1,176 @@
+\documentclass[
+    % Uncomment the following for more compact font size and spacing
+    % compact
+]{llresume}
+
+% Use the following commands to change the document's colors
+\definecolor{accentcolor}{HTML}{f42e03}
+\definecolor{fillcolor}{HTML}{E4EDDE}
+\definecolor{headingcolor}{HTML}{1C6336}
+
+% Define custom commands, if needed
+\renewcommand{\emph}[1]{{\bfseries\color{accentcolor}#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Personal information
+%
+% For contacts and other info, you can use \infoGeneric{<icon>}{<text>}[<link>]
+% to add a line of information, or one of the following shortcuts in the form
+% \info<Shortcut>{<text>}[<link>]:
+%
+% \infoEmail          \infoDate           \infoLinkedin       \infoBook
+% \infoPhone          \infoPlace          \infoGithub         \infoAuthor
+% \infoAddress        \infoLink           \infoInstagram      \infoTools
+% \infoBirthday       \infoHomepage       \infoFlickr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% First name, last name, and optional pronouns
+\name{Anurag}{Srivastava}[Student of Physics]
+
+% Profile photo
+\photo{photo.jpg}
+
+% Contacts and other info
+\personalinfo{
+    \infoBirthday{24/08/2002}
+    \infoAddress{Kolkata, India}
+    \infoEmail{anuragsrivastava091@gmail.com}[mailto:anuragsrivastava091@gmail.com]
+    \infoLinkedin{linkedin.com/in/anurag-srivastava-718567210}[https://www.linkedin.com/in/anurag-srivastava-718567210/]
+    \infoGithub{github.com/Soul-Coder666}[https://github.com/Soul-Coder666]
+}
+
+% Tag line
+\tagline{
+    My name is Anurag Srivastava, and I am a 20-year-old \emph{Physics undergraduate student}. In my free time, I enjoy learning new skills and reading novels among other things. I am passionate about \emph{Physics and Technology} and I strive to make a positive impact in the world through my actions and words. I am a kind, compassionate, and driven individual, and I am always looking for new opportunities to grow and learn. I am excited to meet new people and make meaningful \emph{connections}, so feel free to reach out and say hello!
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main pane
+%
+% Each section of the main pane is enclosed within an environment of the form
+% \begin{mainsection}{<section title>} ... \end{mainsection}
+%
+% Available commands:
+%
+% \entryJob{<title>}[<descr>]{<location>}{<date>}
+% \entryPub{<title>}[<descr>]{<authors>}{<journal/conference>}{<DOI/link>}
+% \entrySkills[<title>]{<list of skills>}
+% \entryTags[<title>]{<list of tags>}
+% \entryGeneric{<title>}[<descr>][<info>][<info>][<info>]
+%
+% Skill and tag commands:
+%
+% \skill{<name>}{<score>}
+% \simpleskill[<icon>]{<name>}
+% \boxedtag[<icon>]{<name>}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\makeheader
+
+\begin{mainpane}
+    \begin{mainsection}{Education}
+        \entryJob
+            {BSc Physics Honours}
+            [Still learning new things and valuable lessons here everyday]
+            {Ananda Mohan College, Kolkata}
+            {2021 -- 2024}
+        \entryJob
+            {Highschool}
+            [Established my fundamentals and my neverending love for the universe]
+            {Maria's Day School, Howrah}
+            {2008 -- 2021}
+    \end{mainsection}
+
+    \begin{mainsection}{skills}
+        \entryGeneric
+            {Android Applications}
+            [\emph{Java} based android applications using \emph{Android Studio}]
+
+        \entryGeneric
+            {Website Building}
+            [Both frontend and backend development\\
+            Using either using HTML, CSS, and JavaScript or Wordpress for frontend and PHP for backend]
+
+        \entryGeneric
+            {Web/Data Scrapping}
+            [Using data crawlers, web scrapping tools or with Python's package \emph{Beautiful Soup}]
+
+        \entryGeneric
+            {Book Writing/Typesetting}
+            [Using LaTeX for formating and writing professional quality books and articles]
+
+        % \entryGeneric
+        %     {Data Handling/Data Cleaning}
+        %     [Cleaning huge amount of \emph{Excel or Spreadsheet} data using different python modules or other methods]
+
+        \entryGeneric
+            {Automation}
+            [Task automation using Python]
+        % \entryGeneric
+        %     {Photo/Video Editing}
+        %     [Professional level photo or video editing using \emph{Adobe Photoshop and Premiere}]
+    \end{mainsection}
+
+    \begin{mainsection}{Projects}
+        \entryGeneric
+            {This LaTeX r\'esum\'e}
+            [Made in correspondence to a project]
+            [\infoGithub
+                {github.com/Soul-Coder666/resume}
+                [https://github.com/Soul-Coder666/resume/]]
+        \entryGeneric
+            {Food Finder an Android Application}
+            [An Android Application Made with Java for finding available seats in Restraunts near you\\
+            Selected in top 10 in Blue Learn Hackathon]
+            [\infoHomepage
+                {Click here to download!}
+                [https://drive.google.com/uc?export=download&id=1fvaUNNIbOg8mfIJGs2Xxfglki9x9DBZF]]
+            [\infoGithub
+                {github.com/Soul-Coder666/food-finder}
+                [https://github.com/Soul-Coder666/food-finder]]
+    \end{mainsection}
+
+    % \begin{mainsection}{Work experience}
+    %     \entryJob
+    %         {Mars explorer}
+    %         [Mostly playing with Mars rovers to search for the remains of an
+    %         ancient society]
+    %         {Mars (Solar System)}
+    %         {November 2017 -- present}
+    %     \entryJob
+    %         {Personal portable heater}
+    %         [Hired on demand by those who happened to feel cold during the
+    %         day and could use a hug too]
+    %         {All over Earth}
+    %         {June 2008 -- March 2010}
+    % \end{mainsection}
+
+    \begin{mainsection}{languages}
+        \entrySkills[Computer]{
+            \skill{Python}{3}
+            \skill{Java}{3}
+            \skill{C++}{2}
+            \skill{JavaScript}{2}
+        }
+        \entrySkills[Languages]{
+            \skill{English}{3}
+            \skill{Hindi}{3}
+            \skill{Bangla}{2}
+            \skill{Spanish}{1}
+        }
+    \end{mainsection}
+
+    \begin{mainsection}{Personal interests}
+        \entryTags{
+            \boxedtag{Playing Chess}
+            \boxedtag{Reading Books}
+            \boxedtag{Watching Movies and Shows}
+            \boxedtag{Coding}
+            \boxedtag{Travelling}
+        }
+    \end{mainsection}
+\end{mainpane}
+
+\end{document}
